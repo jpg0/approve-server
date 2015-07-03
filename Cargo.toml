@@ -1,0 +1,30 @@
+[package]
+
+name = "approver-server"
+version = "0.0.1"
+authors = [ "Jonathan Gilbert <jpg@trillica.com>" ]
+
+[features]
+default = ["iron_backend"]
+iron_backend = ["iron", "bodyparser", "plugin"]
+
+[dependencies]
+url = "*"
+rustc-serialize = "*"
+valico = "*"
+cookie = "*"
+
+[dependencies.rustless]
+git = "https://github.com/rustless/rustless"
+
+[dependencies.iron]
+optional = true
+version = "*"
+
+[dependencies.bodyparser]
+optional = true
+version = "*"
+
+[dependencies.plugin]
+optional = true
+version = "*"
